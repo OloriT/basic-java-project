@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd"><suite name="All Test Suite"><test verbose="2" preserve-order="true" name="C:/Users/SEPTEM 7 INVESMENT/IdeaProjects/MY_JAVA/FirstFacebookTest/src/test/java/Login"><classes><class name="Login.SigninTest"><methods><include name="PositiveSignup"/><include name="clickUser1item"/><include name="verifyItems"/></methods></class></classes></test></suite>
