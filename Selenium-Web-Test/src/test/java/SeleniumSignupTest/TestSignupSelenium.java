@@ -37,7 +37,7 @@ public class TestSignupSelenium {
         //6. Input your email on the email field
         driver.findElement(By.id("user_email")).sendKeys("tunde4@mailinator.com");
         //7. Locate your password and input your password on the password field
-        driver.findElement(By.id("user_password")).sendKeys("admin");
+        driver.findElement(By.id("user_password")).sendKeys("speaker");
         //8. Click on submit button to submit
         driver.findElement(By.id("submit")).click();
         Thread.sleep(5000);

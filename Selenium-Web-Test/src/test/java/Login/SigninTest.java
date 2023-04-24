@@ -7,6 +7,8 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
+import java.time.Duration;
+
 import static java.lang.Thread.sleep;
 
 public class SigninTest {
@@ -19,22 +21,22 @@ public class SigninTest {
         System.setProperty("webdriver.chrome.driver", "resources/chromedriver.exe");
         //1. open your Chrome browser
         driver = new ChromeDriver();
+        driver.manage().timeouts().implicitlyWait(Duration.ofMillis(50000));
         //2. input your selenium demo page URL (https://selenium-blog.herokuapp.com)
         driver.get("https://selenium-blog.herokuapp.com");
-        sleep(Long.parseLong("10"));
         //3. Maximise the browser
         driver.manage().window().maximize();
         //4. click on the login button to open the login page
         driver.findElement(By.xpath("/html/body/div[2]/div/a[1]")).click();
-        Thread.sleep(5000);
+
     }
 
     @Test(priority = 0)
     public void PositiveSignup() throws InterruptedException {
         //5. Input your email on the email field
-        driver.findElement(By.id("session_email")).sendKeys("joe@mailinator.com");
+        driver.findElement(By.id("session_email")).sendKeys(Constants.VALID_EMAIL);
         //6. Input your password on the password field
-        driver.findElement(By.id("session_password")).sendKeys("admin");
+        driver.findElement(By.id("session_password")).sendKeys(Constants.VALID_PASSWORD);
         //7. Click on log in button to log in
         driver.findElement(By.xpath("/html/body/div[2]/form/div[3]/div/input")).click();
         Thread.sleep(5000);
