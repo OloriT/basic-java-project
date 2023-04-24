@@ -32,9 +32,9 @@ public class KongaUserLogin {
     @Test(priority = 0)
     public void ValidSignup () throws InterruptedException {
         //5. Input your email address or phone number in email/phone number field
-        driver.findElement(By.id("username")).sendKeys("oloritaiwo@gmail.com");
+        driver.findElement(By.id("username")).sendKeys(Constants.VALID_EMAIL);
         //6. Input your password in the password field
-        driver.findElement(By.id("password")).sendKeys("WisdomOlufemi5488");
+        driver.findElement(By.id("password")).sendKeys(Constants.VALID_PASSWORD);
         //7. Click on log in to log in to your account
         driver.findElement(By.xpath("//*[@id=\"app-content-wrapper\"]/div[4]/section/section/aside/div[2]/div/form/div[3]/button")).click();
         Thread.sleep(3000);
