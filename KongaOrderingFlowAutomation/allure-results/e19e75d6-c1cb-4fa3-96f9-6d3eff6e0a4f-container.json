@@ -1,1 +1,0 @@
-{"uuid":"e19e75d6-c1cb-4fa3-96f9-6d3eff6e0a4f","name":"KongaOrderingFlowAutomation","children":[],"befores":[{"name":"start","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1655922647215,"stop":1655922681814}],"afters":[],"start":1655922647184,"stop":1655922681865}
