@@ -2,4 +2,4 @@
 allure-results
 target
 resources
-src/test/java/ValidLoginTest/Constants.java
+src/test/java/ai.autotest.ValidLoginTest/ai.autotest.Constants.java

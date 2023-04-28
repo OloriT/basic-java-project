@@ -1,4 +1,4 @@
-package ValidLoginTest;
+package ai.autotest;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;

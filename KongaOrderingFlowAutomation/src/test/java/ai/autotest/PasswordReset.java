@@ -1,14 +1,11 @@
-package ForgotPasswordTest;
+package ai.autotest;
 
-import ValidLoginTest.Constants;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-
-import java.util.concurrent.ConcurrentSkipListMap;
 
 public class PasswordReset {
 
@@ -41,7 +38,7 @@ public class PasswordReset {
     @Test(priority = 1)
     public void ValidEmail () throws InterruptedException {
         //Enter email in the email field
-        driver.findElement(By.id("email")).sendKeys(Constants.VALID_EMAIL);
+        driver.findElement(By.id("email")).sendKeys();
         Thread.sleep(3000);
         //Click on set reset Link
         driver.findElement(By.xpath("//*[@id=\"mainContent\"]/div/div/div/div[1]/div/form/div[2]/button")).click();
